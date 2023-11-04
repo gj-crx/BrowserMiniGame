@@ -1,0 +1,18 @@
+﻿@model Record
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>Game records</h1>
+
+<form method="post" asp-controller="Records" asp-action="RecordSet">
+    <label asp-for="RecordHolderName"></label>
+    <input asp-for="RecordHolderName" />
+    <span asp-validation-for="RecordHolderName"> </span>
+
+    <label asp-for="RecordValue"></label>
+    <input asp-for="RecordValue" />
+    <span asp-validation-for="RecordValue"> </span>
+
+    <input type="submit" value="Установить рекорд"/>
+
+</form>
