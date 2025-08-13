@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 using ASPNetTestProject.Models;
@@ -25,6 +25,12 @@ namespace ASPNetTestProject.Controllers
             return View();
         }
         public IActionResult GameRecords()
+        {
+            return View();
+        }
+
+        // INSERTED: Game of Life page action
+        public IActionResult GameOfLife()
         {
             return View();
         }
