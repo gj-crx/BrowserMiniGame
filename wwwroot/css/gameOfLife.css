@@ -21,3 +21,11 @@
 .gol-hint {
   font-size: 0.9rem;
 }
+
+.gol-stats {
+  min-height: 40px;
+}
+
+#gol-sparkline {
+  background: #fff;
+}

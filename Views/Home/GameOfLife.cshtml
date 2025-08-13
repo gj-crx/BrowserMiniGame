@@ -12,6 +12,7 @@
             <button id="gol-step" class="btn btn-secondary">Step</button>
             <button id="gol-clear" class="btn btn-outline-danger">Clear</button>
             <button id="gol-random" class="btn btn-outline-success">Randomize</button>
+            <button id="gol-age" class="btn btn-outline-dark">Age shading: Off</button>
         </div>
         <div class="d-inline-flex align-items-center me-3">
             <label for="gol-speed" class="form-label mb-0 me-2">Speed</label>
@@ -27,6 +28,12 @@
 
     <div class="gol-canvas-wrap">
         <canvas id="gol-canvas" width="900" height="600" aria-label="Game of Life board" tabindex="0"></canvas>
+    </div>
+
+    <div class="gol-stats mt-2 d-flex align-items-center">
+        <div class="me-3">Generation: <span id="gol-generation">0</span></div>
+        <div class="me-3">Live: <span id="gol-live">0</span></div>
+        <canvas id="gol-sparkline" width="240" height="40" class="border rounded"></canvas>
     </div>
 
     <div class="gol-hint text-muted mt-2">
