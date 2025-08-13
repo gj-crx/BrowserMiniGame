@@ -1,0 +1,23 @@
+/* Game of Life styles */
+.gol-page {
+  user-select: none;
+}
+
+.gol-controls .btn + .btn {
+  margin-left: 0.25rem;
+}
+
+.gol-canvas-wrap {
+  display: inline-block;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+#gol-canvas {
+  display: block;
+  background-color: #ffffff;
+}
+
+.gol-hint {
+  font-size: 0.9rem;
+}
